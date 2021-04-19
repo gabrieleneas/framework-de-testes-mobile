@@ -10,8 +10,7 @@ import java.text.Normalizer;
 public class FormularioPage extends BasePage {
 
 
-    @AndroidFindBy(xpath = "//*[@text=\"Formulário\"]")
-    private MobileElement elementoFormulario;
+
 
     @AndroidFindBy(xpath = "//*[@content-desc=\"nome\"]")
     private MobileElement campoNome;
@@ -35,15 +34,21 @@ public class FormularioPage extends BasePage {
     private MobileElement display;
 
 
-    public FormularioPage() {
-        PageFactory.initElements(new AppiumFieldDecorator(mobDriver), this);
+    @AndroidFindBy(xpath = "//*[@text=\"SALVAR DEMORADO\"]")
+    private MobileElement botaoSalvarDemorado;
+
+    @AndroidFindBy(accessibility = "slid")
+    private MobileElement seekBar;
+
+
+
+
+    public MobileElement getBotaoSalvarDemorado() {
+        return botaoSalvarDemorado;
     }
 
 
-
-    public MobileElement getElementoFormulario() {
-        return elementoFormulario;
-    }
+    public MobileElement getSeekBar() { return seekBar; }
 
     public MobileElement getCampoNome() {
         return campoNome;

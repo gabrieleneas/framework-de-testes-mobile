@@ -6,14 +6,16 @@ import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import org.junit.Assert;
 import pages.FormularioPage;
+import pages.InicialPage;
 
 public class FormularioSteps {
 
+    InicialPage inicialPage = new InicialPage();
     FormularioPage formularioPage = new FormularioPage();
 
-    @Dado("que o usuário esta na pagina {string}")
-    public void queOUsuárioEstaNaPagina(String arg0) {
-        formularioPage.clicarElemento(formularioPage.getElementoFormulario());
+    @Dado("que o usuário esta na pagina Formulario")
+    public void queOUsuárioEstaNaPaginaFormulario() {
+        inicialPage.clicarElemento(inicialPage.getBotaoFormulario());
     }
 
     @E("preenche os campos")
@@ -21,6 +23,7 @@ public class FormularioSteps {
         formularioPage.digitarElemento(formularioPage.getCampoNome(), "gabriel")
                 .clicarElemento(formularioPage.getBotaoConsole())
                 .clicarElemento(formularioPage.getSelectOpcao())
+                .moverSeekBar(formularioPage.getSeekBar())
                 .clicarElemento(formularioPage.getBotaoSwitch())
                 .clicarElemento(formularioPage.getCheckBox())
                 .clicarElemento(formularioPage.getBotaoSalvar());
@@ -35,4 +38,6 @@ public class FormularioSteps {
     public void asInformacoesSalvasAparecem() {
         Assert.assertTrue(formularioPage.getDisplay() != null);
     }
+
+
 }
