@@ -1,0 +1,16 @@
+pages\BasePage.class
+pages\FormularioPage.class
+pages\LoginPage.class
+steps\FormularioSteps.class
+pages\AbasPage.class
+steps\AlertasSteps.class
+steps\CadastroSteps.class
+steps\BaseSteps.class
+runner\RunTest.class
+pages\InicialPage.class
+utils\MobileDriverManager.class
+pages\AlertasPage.class
+steps\AbaSteps.class
+pages\CadastroPage.class
+steps\Hooks.class
+utils\MobileProperties.class
