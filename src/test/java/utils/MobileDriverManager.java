@@ -25,7 +25,7 @@ public class MobileDriverManager {
         if (mobDriver == null) {
             if (os.contains("windows")) {
                 File appAndroid = new File("apks/app-curso.apk");
-                cap.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-23");
+                cap.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-233");
                 cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
                 cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
                 cap.setCapability(MobileCapabilityType.APP, appAndroid.getAbsolutePath());
@@ -43,7 +43,7 @@ public class MobileDriverManager {
             }
         }
 
-        mobDriver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+        mobDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     public static void closeDriver() {

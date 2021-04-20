@@ -15,28 +15,28 @@ public class FormularioSteps {
 
     @Dado("que o usuário esta na pagina Formulario")
     public void queOUsuárioEstaNaPaginaFormulario() {
-        inicialPage.clicarElemento(inicialPage.getBotaoFormulario());
+        inicialPage.tap(inicialPage.getBtnFormulario());
     }
 
     @E("preenche os campos")
     public void preencheOsCampos() {
-        formularioPage.digitarElemento(formularioPage.getCampoNome(), "gabriel")
-                .clicarElemento(formularioPage.getBotaoConsole())
-                .clicarElemento(formularioPage.getSelectOpcao())
-                .moverSeekBar(formularioPage.getSeekBar())
-                .clicarElemento(formularioPage.getBotaoSwitch())
-                .clicarElemento(formularioPage.getCheckBox())
-                .clicarElemento(formularioPage.getBotaoSalvar());
+        formularioPage.sendKeys(formularioPage.getCampoNome(), "gabriel")
+                .tap(formularioPage.getBotaoConsole())
+                .tap(formularioPage.getSelectOpcao())
+                .moveSeekBar(formularioPage.getSeekBar())
+                .tap(formularioPage.getBotaoSwitch())
+                .tap(formularioPage.getCheckBox())
+                .tap(formularioPage.getBotaoSalvar());
     }
 
     @Quando("toca no botão salvar")
     public void tocaNoBotãoSalvar() {
-        formularioPage.clicarElemento(formularioPage.getBotaoSalvar());
+        formularioPage.tap(formularioPage.getBotaoSalvar());
     }
 
     @Entao("as informacoes salvas aparecem")
     public void asInformacoesSalvasAparecem() {
-        Assert.assertTrue(formularioPage.getDisplay() != null);
+        Assert.assertTrue(formularioPage.getDisplay().isDisplayed());
     }
 
 

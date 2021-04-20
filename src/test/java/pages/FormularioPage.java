@@ -12,13 +12,13 @@ public class FormularioPage extends BasePage {
 
 
 
-    @AndroidFindBy(xpath = "//*[@content-desc=\"nome\"]")
+    @AndroidFindBy(xpath = "//*[@content-desc='nome']")
     private MobileElement campoNome;
 
     @AndroidFindBy(accessibility = "console")
     private MobileElement botaoConsole;
 
-    @AndroidFindBy(xpath = "//*[@text=\"Nintendo Switch\"]")
+    @AndroidFindBy(xpath = "//*[@text='Nintendo Switch']")
     private MobileElement selectOpcao;
 
     @AndroidFindBy(accessibility = "check")
@@ -27,14 +27,14 @@ public class FormularioPage extends BasePage {
     @AndroidFindBy(accessibility = "switch")
     private MobileElement botaoSwitch;
 
-    @AndroidFindBy(xpath = "//*[@text=\"SALVAR\"]")
+    @AndroidFindBy(xpath = "//*[@text='SALVAR']")
     private MobileElement botaoSalvar;
 
-    @AndroidFindBy(xpath = "//*[@text=\"Console: switch\"]" )
+    @AndroidFindBy(xpath = "//*[@text='Console: switch']" )
     private MobileElement display;
 
 
-    @AndroidFindBy(xpath = "//*[@text=\"SALVAR DEMORADO\"]")
+    @AndroidFindBy(xpath = "//*[@text='SALVAR DEMORADO']")
     private MobileElement botaoSalvarDemorado;
 
     @AndroidFindBy(accessibility = "slid")
