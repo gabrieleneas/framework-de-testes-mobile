@@ -1,0 +1,588 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-22T17:05:27.913Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8194136900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.driverStart()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Usuario esta na pagina página Alertas e interage com botões",
+        "description": "",
+        "id": "clicar-nos-botoes-de-alerta;usuario-esta-na-pagina-página-alertas-e-interage-com-botões",
+        "after": [
+          {
+            "result": {
+              "duration": 2161185200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.driverRefresh()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 932532000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que o usuário esta na pagina Alertas",
+            "match": {
+              "location": "steps.AlertasSteps.queOUsuárioEstaNaPaginaAlertas()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 682196800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "toca em um alerta",
+            "match": {
+              "location": "steps.AlertasSteps.tocaEmUmAlerta()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 785324500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "toca no botao confirmar",
+            "match": {
+              "location": "steps.AlertasSteps.tocaNoBotaoConfirmar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 802578500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "o texto muda",
+            "match": {
+              "location": "steps.AlertasSteps.oTextoMuda()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@teste2"
+          },
+          {
+            "name": "@teste"
+          }
+        ]
+      }
+    ],
+    "name": "Clicar nos botoes de alerta",
+    "description": "",
+    "id": "clicar-nos-botoes-de-alerta",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/Alertas.feature",
+    "tags": [
+      {
+        "name": "@teste2",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      },
+      {
+        "name": "@teste",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-22T17:05:41.541Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11967800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.driverStart()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Usuario esta na pagina página de login e clica no botao novo usuario",
+        "description": "",
+        "id": "cadastrar-um-usuario;usuario-esta-na-pagina-página-de-login-e-clica-no-botao-novo-usuario",
+        "after": [
+          {
+            "result": {
+              "duration": 1872325500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.driverRefresh()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1026479300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que o usuário esta na pagina de login",
+            "match": {
+              "location": "steps.CadastroSteps.queOUsuárioEstaNaPaginaDeLogin()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1582881800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "clica no botao Novo Usuario",
+            "match": {
+              "location": "steps.CadastroSteps.clicaNoBotaoNovoUsuario()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 2338970200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "preenche o formulario",
+            "match": {
+              "location": "steps.CadastroSteps.preencheOFormulario()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 558005100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "clica no botao Cadastrar",
+            "match": {
+              "location": "steps.CadastroSteps.clicaNoBotaoCadastrar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: Can\u0027t locate an element by this strategy: By.chained({By.AccessibilityId: Usuário inserido com sucesso})\r\n\tat io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)\r\n\tat io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)\r\n\tat io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(\u003cgenerated\u003e)\r\n\tat steps.CadastroSteps.aMensagemDeSucessoAparece(CadastroSteps.java:44)\r\n\tat ✽.a mensagem de sucesso aparece(file:///C:/Users/Gabriel.Soares/Desktop/framework-de-testes-mobile/src/test/resources/features/Cadastro.feature:11)\r\nCaused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@6edc4161 (tried for 1 second(s) with 500 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)\r\n\tat io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)\r\n\tat io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)\r\n\tat io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(\u003cgenerated\u003e)\r\n\tat steps.CadastroSteps.aMensagemDeSucessoAparece(CadastroSteps.java:44)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.AccessibilityId: Usuário inserido com sucesso})\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-Q7OL5TG1\u0027, ip: \u0027192.168.15.26\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.2\u0027\nDriver info: driver.version: AndroidDriver\r\n\tat io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)\r\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)\r\n\tat io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)\r\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)\r\n\tat io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)\r\n\tat io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)\r\n\tat io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\t... 46 more\r\n",
+              "duration": 10472716200,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "a mensagem de sucesso aparece",
+            "match": {
+              "location": "steps.CadastroSteps.aMensagemDeSucessoAparece()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@teste3"
+          },
+          {
+            "name": "@teste"
+          }
+        ]
+      }
+    ],
+    "name": "Cadastrar um usuario",
+    "description": "",
+    "id": "cadastrar-um-usuario",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/Cadastro.feature",
+    "tags": [
+      {
+        "name": "@teste3",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      },
+      {
+        "name": "@teste",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-22T17:05:59.419Z",
+        "before": [
+          {
+            "result": {
+              "duration": 17949700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.driverStart()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Usuario esta na pagina página formulário e interage com botões",
+        "description": "",
+        "id": "preencher-formulário;usuario-esta-na-pagina-página-formulário-e-interage-com-botões",
+        "after": [
+          {
+            "result": {
+              "duration": 2059971700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.driverRefresh()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1017737100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que o usuário esta na pagina Formulario",
+            "match": {
+              "location": "steps.FormularioSteps.queOUsuárioEstaNaPaginaFormulario()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 5544654000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "preenche os campos",
+            "match": {
+              "location": "steps.FormularioSteps.preencheOsCampos()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 678039400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "toca no botão salvar",
+            "match": {
+              "location": "steps.FormularioSteps.tocaNoBotãoSalvar()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 104732900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "as informacoes salvas aparecem",
+            "match": {
+              "location": "steps.FormularioSteps.asInformacoesSalvasAparecem()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@teste1"
+          },
+          {
+            "name": "@teste"
+          }
+        ]
+      }
+    ],
+    "name": "Preencher formulário",
+    "description": "",
+    "id": "preencher-formulário",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/Formulario.feature",
+    "tags": [
+      {
+        "name": "@teste1",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 3
+        }
+      },
+      {
+        "name": "@teste",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 11
+        }
+      }
+    ]
+  },
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-22T17:06:08.848Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13962900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.driverStart()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Usuario esta na pagina de Swipe List e desliza o dedo em cima de um botao",
+        "description": "",
+        "id": "deslizar-um-elemento-na-tela;usuario-esta-na-pagina-de-swipe-list-e-desliza-o-dedo-em-cima-de-um-botao",
+        "after": [
+          {
+            "result": {
+              "duration": 1882001500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.driverRefresh()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1025521900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que o usuário esta na pagina Swipe List",
+            "match": {
+              "location": "steps.SwipeListSteps.queOUsuárioEstaNaPaginaSwipeList()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 2118528400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "desliza um botao para esquerda",
+            "match": {
+              "location": "steps.SwipeListSteps.deslizaUmBotaoParaEsquerda()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 721965600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "clica no botao",
+            "match": {
+              "location": "steps.SwipeListSteps.clicaNoBotao()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 930886000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "o texto do elemento muda",
+            "match": {
+              "location": "steps.SwipeListSteps.oTextoDoElementoMuda()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@teste5"
+          },
+          {
+            "name": "@teste"
+          }
+        ]
+      }
+    ],
+    "name": "Deslizar um elemento na tela",
+    "description": "",
+    "id": "deslizar-um-elemento-na-tela",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/SwipeList.feature",
+    "tags": [
+      {
+        "name": "@teste5",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      },
+      {
+        "name": "@teste",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 9
+        }
+      }
+    ]
+  },
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-22T17:06:15.546Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10970100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.driverStart()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Usuario esta na pagina de Abas e desliza o dedo para mudar de aba",
+        "description": "",
+        "id": "trocar-de-aba;usuario-esta-na-pagina-de-abas-e-desliza-o-dedo-para-mudar-de-aba",
+        "after": [
+          {
+            "result": {
+              "duration": 1843516200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.driverRefresh()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1090123800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que o usuário esta na pagina Abas",
+            "match": {
+              "location": "steps.AbaSteps.queOUsuárioEstaNaPaginaAbas()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1786621200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "desliza para esquerda",
+            "match": {
+              "location": "steps.AbaSteps.deslizaParaEsquerda()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 61273100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "a tela muda de aba",
+            "match": {
+              "location": "steps.AbaSteps.aTelaMudaDeAba()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@teste4"
+          },
+          {
+            "name": "@teste"
+          }
+        ]
+      }
+    ],
+    "name": "Trocar de aba",
+    "description": "",
+    "id": "trocar-de-aba",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/TrocarDeAba.feature",
+    "tags": [
+      {
+        "name": "@teste4",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      },
+      {
+        "name": "@teste",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 9
+        }
+      }
+    ]
+  }
+]
