@@ -28,8 +28,8 @@ public class CadastroSteps {
 
     @E("preenche o formulario")
     public void preencheOFormulario() {
-        cadastroPage.sendKeys(cadastroPage.getCampoNome(), "gabrieu2323")
-                .sendKeys(cadastroPage.getCampoEmail(), "gabrieu2323@email.com")
+        cadastroPage.sendKeys(cadastroPage.getCampoNome(), "gabrieu232323")
+                .sendKeys(cadastroPage.getCampoEmail(), "gabrieu232233@email.com")
                 .sendKeys(cadastroPage.getCampoSenha(), "1234");
 
     }

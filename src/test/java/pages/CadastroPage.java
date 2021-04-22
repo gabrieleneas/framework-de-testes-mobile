@@ -17,18 +17,19 @@ public class CadastroPage extends BasePage{
     private  MobileElement campoSenha;
 
     @AndroidFindBy(accessibility = "Cadastrar")
-    private MobileElement botaoCadastrar;
+    private MobileElement btnCadastrar;
+
+    @AndroidFindBy(accessibility = "Usuário inserido com sucesso")
+    private MobileElement mensagemDeSucesso;
 
     public MobileElement getMensagemDeSucesso() {
         return mensagemDeSucesso;
     }
 
-    @AndroidFindBy(accessibility = "Usuário inserido com sucesso")
-    private MobileElement mensagemDeSucesso;
-
     public MobileElement getBotaoCadastrar() {
-        return botaoCadastrar;
+        return btnCadastrar;
     }
+
     public MobileElement getCampoNome() {
         return campoNome;
     }
