@@ -12,5 +12,7 @@ utils\MobileDriverManager.class
 pages\AlertasPage.class
 steps\AbaSteps.class
 pages\CadastroPage.class
+pages\SwipeListPage.class
+steps\SwipeListSteps.class
 steps\Hooks.class
 utils\MobileProperties.class

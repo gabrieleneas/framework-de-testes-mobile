@@ -20,12 +20,7 @@ public class AbaSteps {
 
     @Quando("desliza para esquerda")
     public void deslizaParaEsquerda() {
-
       abasPage.swipeScreen("ESQUERDA");
-
-
-
-
     }
 
     @Entao("a tela muda de aba")

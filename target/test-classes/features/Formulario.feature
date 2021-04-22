@@ -1,6 +1,6 @@
 # language: pt
 
-  @teste1
+  @teste1 @teste
   Funcionalidade: Preencher formulário
 
       Cenario: Usuario esta na pagina página formulário e interage com botões

@@ -1,6 +1,6 @@
 # language: pt
 
-@teste3
+@teste3 @teste
 Funcionalidade: Cadastrar um usuario
 
   Cenario: Usuario esta na pagina página de login e clica no botao novo usuario

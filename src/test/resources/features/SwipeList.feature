@@ -1,6 +1,6 @@
 # language: pt
 
-@teste5
+@teste5 @teste
 Funcionalidade: Deslizar um elemento na tela
 
   Cenario: Usuario esta na pagina de Swipe List e desliza o dedo em cima de um botao

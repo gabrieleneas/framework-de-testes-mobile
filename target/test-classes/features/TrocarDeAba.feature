@@ -1,6 +1,6 @@
 # language: pt
 
-@teste4
+@teste4 @teste
 Funcionalidade: Trocar de aba
 
   Cenario: Usuario esta na pagina de Abas e desliza o dedo para mudar de aba

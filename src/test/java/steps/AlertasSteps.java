@@ -20,17 +20,16 @@ public class AlertasSteps {
 
     @Quando("toca em um alerta")
     public void tocaEmUmAlerta() {
-        alertasPage.tap(alertasPage.getBotaoAlertaSimples());
-
+        alertasPage.tap(alertasPage.getBtnAlertaConfirm());
     }
 
     @E("toca no botao confirmar")
     public void tocaNoBotaoConfirmar() {
-        alertasPage.tap(alertasPage.getBotaoOk());
+        alertasPage.tap(alertasPage.getBtnConfirmar());
     }
 
-    @Entao("o alerta some")
-    public void oAlertaSome() {
-        Assert.assertFalse(alertasPage.getBotaoAlertaConfirm().isDisplayed());
+    @Entao("o texto muda")
+    public void oTextoMuda() {
+        Assert.assertTrue(alertasPage.getTxtConfirmado().isDisplayed());
     }
 }
