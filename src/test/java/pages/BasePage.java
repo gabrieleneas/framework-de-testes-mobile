@@ -12,6 +12,7 @@ import io.appium.java_client.touch.WaitOptions;
 
 import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
+import org.junit.rules.ExpectedException;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.support.PageFactory;
